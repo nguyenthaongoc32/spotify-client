@@ -63,7 +63,7 @@ const User = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.post(
-        'http://localhost:5000/api/users/createUser',
+        'https://spotify-clone-server-13ly.onrender.com/api/users/createUser',
         { userName, email, password },
         {
           headers: {
@@ -94,7 +94,7 @@ const [deleteModal, setDeleteModal] = useState(false);
     try {
       const token = localStorage.getItem('token');
       const response = await axios.delete(
-        `http://localhost:5000/api/users/delete/${selectedUser._id}`,
+        `https://spotify-clone-server-13ly.onrender.com/api/users/delete/${selectedUser._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -135,7 +135,7 @@ setDeleteModal(true)
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        `http://localhost:5000/api/users/edit/${selectedUser._id}`,
+        `https://spotify-clone-server-13ly.onrender.com/api/users/edit/${selectedUser._id}`,
         { email, userName },
         {
           headers: {
