@@ -1,0 +1,51 @@
+/* wrapper */
+.wrapper-dashboard{
+  display: flex;
+  position: relative;
+  top: 80px;
+  left: 250px;
+}
+.total-over{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+}
+.totalSong{
+  padding: 60px ;
+  margin-left: -150px;
+}
+.img-wrapper{
+  width: 60px;
+}
+.h1-wrapper{
+  font-size: 23px;
+  color: rgb(230, 121, 11);
+  margin-left: 60px;
+  margin-top: -50px;
+}
+.h3-wrapper{
+font-size: 15px;
+margin-left: 60px;
+}
+
+.totalArtist{
+  padding: 60px ;
+  margin-left: 180px;
+  margin-top: -12rem;
+}
+.totalTrack{
+  padding: 60px;
+  margin-left: 560px;
+  margin-top: -12rem;
+}
+.totalAlbum{
+  padding: 60px;
+  margin-left: 900px;
+  margin-top: -12rem;
+}
+.chart-container{
+margin-top: 11rem;
+margin-left: -78rem;
+
+}
+/* Premium */
