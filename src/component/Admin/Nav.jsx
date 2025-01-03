@@ -25,45 +25,46 @@ const Nav = () => {
           <Link to="/dashboard" className='dashboard-link'><h1 className='name-logo'>Spotify</h1></Link>
           <ul className="dashboard-menu">
             <li className='li-dashboard'>
-
-              <Link className={`dashboard-link ${location.pathname === "/admin/user" ? 'active' : ''}`}
+            <Link
+                className={`dashboard-link ${location.pathname === "/admin/user" ? 'active' : ''}`}
                 to="/admin/user"
-                onClick={() => handleClick('/admin/user')}> <FiUser className='icon' />
-                <span className='span-dash'> Users</span>
-              </Link>
-            </li>
-            <li className='li-dashboard'>
-              <Link to="/admin/tracks"
-                className={`dashboard-link ${location.pathname === "/admin/tracks" ? 'active' : ''}`}
-                onClick={() => handleClick('/admin/tracks')}>
-                <BiSolidPlaylist className='icon' />
-                <span className='span-dash'> Tracks</span>
-              </Link>
-            </li>
-
-            <li className='li-dashboard'>
-
-              <Link to="/admin/albums"
-                className={`dashboard-link ${location.pathname === "/admin/albums" ? 'active' : ''}`}
-                onClick={() => handleClick('/admin/ablums')}>
-                <IoMdAlbums className='icon' />
-                <span className='span-dash'> Albums</span>
-              </Link>
-            </li>
-            <li className='li-dashboard'>
-              <Link to="/admin/artist"
-                className={`dashboard-link ${location.pathname === "/admin/artists" ? 'active' : ''}`}
-                onClick={() => handleClick('/admin/artist')}>
+              >
                 <FiUser className='icon' />
-                <span className='span-dash'> Artists</span>
+                <span className='span-dash'>Users</span>
               </Link>
             </li>
-
             <li className='li-dashboard'>
-
-              <Link to="/admin/genres"
+              <Link
+                to="/admin/tracks"
+                className={`dashboard-link ${location.pathname === "/admin/tracks" ? 'active' : ''}`}
+              >
+                <BiSolidPlaylist className='icon' />
+                <span className='span-dash'>Tracks</span>
+              </Link>
+            </li>
+            <li className='li-dashboard'>
+              <Link
+                to="/admin/albums"
+                className={`dashboard-link ${location.pathname === "/admin/albums" ? 'active' : ''}`}
+              >
+                <IoMdAlbums className='icon' />
+                <span className='span-dash'>Albums</span>
+              </Link>
+            </li>
+            <li className='li-dashboard'>
+              <Link
+                to="/admin/artist"
+                className={`dashboard-link ${location.pathname === "/admin/artists" ? 'active' : ''}`}
+              >
+                <FiUser className='icon' />
+                <span className='span-dash'>Artists</span>
+              </Link>
+            </li>
+            <li className='li-dashboard'>
+              <Link
+                to="/admin/genres"
                 className={`dashboard-link ${location.pathname === "/admin/genres" ? 'active' : ''}`}
-                onClick={() => handleClick('/admin/genres')}>
+              >
                 <FiList className='icon' />
                 <span className='span-dash'>Genres</span>
               </Link>
