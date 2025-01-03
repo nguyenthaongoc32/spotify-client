@@ -16,7 +16,7 @@ const register = () => {
             return;
           }
         axios
-          .post('http://localhost:5000/api/auth/Register', {
+          .post('https://spotify-clone-server-13ly.onrender.com/api/auth/Register', {
             userName,
             email,
             password,

@@ -11,7 +11,7 @@ const login = () => {
         e.preventDefault();
     
         axios
-          .post('http://localhost:5000/api/auth/Login', {
+          .post('https://spotify-clone-server-13ly.onrender.com/api/auth/Login', {
             email,
             password,
           })
