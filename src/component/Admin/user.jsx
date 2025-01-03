@@ -19,7 +19,7 @@ const User = () => {
   const fetchUsers = async (pageNumber = 1, pageSize = 5) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/users/getUser', {
+      const response = await axios.get('https://spotify-clone-server-13ly.onrender.com/api/users/getUser', {
         params: { pageNumber, pageSize },
         headers: {
           Authorization: `Bearer ${token}`,

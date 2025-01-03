@@ -10,7 +10,7 @@ const LogOut = ({ onLogout }) => {
     const token = localStorage.getItem('token');
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/logout', {
+      const response = await fetch('https://spotify-clone-server-13ly.onrender.com/api/auth/logout', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

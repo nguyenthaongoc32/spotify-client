@@ -18,7 +18,7 @@ const Track = () => {
     const fetchSongs = async (pageNumber = 1, pageSize = 5) => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/song/getSong', {
+        const response = await axios.get('https://spotify-clone-server-13ly.onrender.com/api/song/getSong', {
           params: { pageNumber, pageSize },
           headers: {
             Authorization: `Bearer ${token}`,
@@ -64,7 +64,7 @@ const Track = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.post(
-        'http://localhost:5000/api/song/createSong',
+        'https://spotify-clone-server-13ly.onrender.com/api/song/createSong',
         { name, artist, img, duration, audioURL },
         {
           headers: {
@@ -105,7 +105,7 @@ const Track = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        `http://localhost:5000/api/song/putSong/${selectedSong._id}`,
+        `https://spotify-clone-server-13ly.onrender.com/api/song/putSong/${selectedSong._id}`,
         { name, artist, img },
         {
           headers: {
@@ -146,7 +146,7 @@ const [deleteModal, setDeleteModal] = useState(false);
     try {
       const token = localStorage.getItem('token');
       const response = await axios.delete(
-        `http://localhost:5000/api/song/delete/${selectedSong._id}`,
+        `https://spotify-clone-server-13ly.onrender.com/api/song/delete/${selectedSong._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
